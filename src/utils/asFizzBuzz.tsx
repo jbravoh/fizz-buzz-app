@@ -1,8 +1,4 @@
-export function asFizzBuzz(number: number): string {
-  if (typeof number === "string") {
-    Number(number);
-  }
-
+export function asFizzBuzz(number: number): string | number {
   if (number % 15 === 0) {
     return "FizzBuzz";
   } else if (number % 5 === 0) {
@@ -10,6 +6,6 @@ export function asFizzBuzz(number: number): string {
   } else if (number % 3 === 0) {
     return "Fizz";
   } else {
-    return number.toString();
+    return number;
   }
 }
