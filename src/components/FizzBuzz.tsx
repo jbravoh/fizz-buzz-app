@@ -6,9 +6,9 @@ export function FizzBuzz(): JSX.Element {
   const [storedValue, setStoredValue] = useState<(string | number)[]>([1]);
 
   const handleIncrement = () => {
-      setCounterValue((prev) => prev + 1);
-      setStoredValue((prev) => [...prev, asFizzBuzz(counterValue + 1)])}
-  
+    setCounterValue((prev) => prev + 1);
+    setStoredValue((prev) => [...prev, asFizzBuzz(counterValue + 1)]);
+  };
 
   return (
     <>
